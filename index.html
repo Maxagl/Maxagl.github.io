@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>作品集 | Your Name</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        .intro {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+        .intro h2 {
+            font-size: 2em;
+            color: #333;
+        }
+        .intro p {
+            font-size: 1.2em;
+            color: #666;
+            margin-top: 10px;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+            gap: 20px;
+        }
+        .project-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 280px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .project-card .content {
+            padding: 20px;
+        }
+        .project-card h3 {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .project-card p {
+            font-size: 1em;
+            color: #777;
+            margin-top: 10px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        footer p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>你的名字</h1>
+        <p>作品集</p>
+    </header>
+
+    <section class="intro">
+        <h2>关于我</h2>
+        <p>简短的介绍自己，这里可以展示你的职业背景，技能以及你正在从事的项目。</p>
+    </section>
+
+    <section class="projects">
+        <div class="project-card">
+            <img src="https://via.placeholder.com/280x180" alt="项目1">
+            <div class="content">
+                <h3>项目名称 1</h3>
+                <p>简要描述这个项目，突出你在其中的角色和成就。</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="https://via.placeholder.com/280x180" alt="项目2">
+            <div class="content">
+                <h3>项目名称 2</h3>
+                <p>简要描述这个项目，突出你在其中的角色和成就。</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="https://via.placeholder.com/280x180" alt="项目3">
+            <div class="content">
+                <h3>项目名称 3</h3>
+                <p>简要描述这个项目，突出你在其中的角色和成就。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 你的名字 | 所有版权</p>
+    </footer>
+
+</body>
+</html>
