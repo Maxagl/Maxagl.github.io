@@ -13,54 +13,82 @@
         }
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            background: linear-gradient(135deg, #00b4d8, #0077b6);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         header {
-            background: #333;
+            background: rgba(0, 0, 0, 0.6);
             color: #fff;
             padding: 20px;
             text-align: center;
+            border-bottom: 2px solid #fff;
         }
         header h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin-bottom: 10px;
+            letter-spacing: 1.5px;
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.5em;
+            letter-spacing: 1px;
         }
         .intro {
             text-align: center;
-            padding: 50px 20px;
-            background-color: #fff;
-            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            padding: 60px 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            margin-top: 20px;
+            border-radius: 10px;
         }
         .intro h2 {
-            font-size: 2em;
-            color: #333;
+            font-size: 2.5em;
+            color: #fff;
+            margin-bottom: 15px;
         }
         .intro p {
             font-size: 1.2em;
-            color: #666;
+            color: #ddd;
             margin-top: 10px;
         }
         .projects {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 50px 20px;
-            gap: 20px;
+            padding: 40px 20px;
+            gap: 30px;
+            animation: fadeIn 1s ease-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
         .project-card {
             background-color: #fff;
             border-radius: 10px;
             overflow: hidden;
-            width: 280px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            width: 300px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            animation: slideUp 0.6s ease-out forwards;
+        }
+        @keyframes slideUp {
+            0% {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
         .project-card:hover {
-            transform: scale(1.05);
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.2);
         }
         .project-card img {
             width: 100%;
@@ -69,22 +97,22 @@
         }
         .project-card .content {
             padding: 20px;
+            text-align: center;
         }
         .project-card h3 {
-            font-size: 1.5em;
+            font-size: 1.6em;
             color: #333;
+            margin-bottom: 10px;
         }
         .project-card p {
-            font-size: 1em;
-            color: #777;
-            margin-top: 10px;
+            font-size: 1.1em;
+            color: #555;
         }
         footer {
-            background: #333;
+            background: rgba(0, 0, 0, 0.8);
             color: #fff;
             text-align: center;
             padding: 20px;
-            margin-top: 40px;
         }
         footer p {
             font-size: 1.2em;
@@ -105,7 +133,7 @@
 
     <section class="projects">
         <div class="project-card">
-            <img src="https://via.placeholder.com/280x180" alt="项目1">
+            <img src="https://via.placeholder.com/300x180" alt="项目1">
             <div class="content">
                 <h3>项目名称 1</h3>
                 <p>简要描述这个项目，突出你在其中的角色和成就。</p>
@@ -113,7 +141,7 @@
         </div>
 
         <div class="project-card">
-            <img src="https://via.placeholder.com/280x180" alt="项目2">
+            <img src="https://via.placeholder.com/300x180" alt="项目2">
             <div class="content">
                 <h3>项目名称 2</h3>
                 <p>简要描述这个项目，突出你在其中的角色和成就。</p>
@@ -121,7 +149,7 @@
         </div>
 
         <div class="project-card">
-            <img src="https://via.placeholder.com/280x180" alt="项目3">
+            <img src="https://via.placeholder.com/300x180" alt="项目3">
             <div class="content">
                 <h3>项目名称 3</h3>
                 <p>简要描述这个项目，突出你在其中的角色和成就。</p>
